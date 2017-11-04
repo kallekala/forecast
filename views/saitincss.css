@@ -1,0 +1,153 @@
+* {
+font-family: Open Sans;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	background: url(https://e1ven.files.wordpress.com/2012/02/panetta-fandango.png?w=445&h=380) no-repeat center center;
+	background-size:cover;
+	height:800px;
+}
+
+.banner1 {
+	width:100%;
+	background-color: rgba(211, 211, 211, 0.95);
+	height:70px;
+	}
+
+#pääNav {
+	background:transparent;
+}
+
+#pääTitle {
+		background:transparent;
+		font-family: Verlag;
+
+}	
+
+.banner1 li{
+	display:inline-block;
+	padding-right:10px;
+	background: transparent;
+	background-color: rgba(211, 211, 211, 0.95);
+
+}
+
+.container {
+	background-color: #EEEEEE;
+	width: 800px;
+	height:auto;
+	border: solid 3px yellow;
+	margin:auto;
+	max-width:100%;
+	background:transparent;
+}
+
+.belowbanner{
+	border: solid 2px green;
+	background: transparent;
+}
+
+.content{
+	border: solid 2px red;
+	margin-top:10px;
+	height:200px;
+	background-color:rgba(255, 255, 255, 0.8);
+}
+
+.text{
+	width: 400px;
+	height:200px;
+	float: left;
+	border: solid 2px yellow;
+	background-color:rgba(255, 255, 255, 0.8);
+
+}
+
+.newestPrediction{
+	width: 370px;
+	height: 200px;
+	margin-left:10px;
+	float: left;
+	border: solid 2px brown;
+	background-color:rgba(255, 255, 255, 0.8);
+
+}
+
+#nappi {
+	float: top;
+	border: solid, black;
+}
+
+/*predictions page*/
+
+.predictionBox {
+	position:relative;
+	border-style: solid;
+	border-radius:10px;
+	float:left;
+	margin:20px;
+	height:150px;
+	width:240px;
+	background-color:rgba(255, 255, 255, 0.8);
+	font-weight: bold;
+}
+
+.predictions, input{
+	border:0;
+	border-bottom:solid 3px black;
+	background:transparent;
+	box-shadow: none;
+}
+
+input[type="text"]:focus {
+  border: 0;
+  border-bottom: 3px solid #ff7171;
+  outline: 0;
+  box-shadow: none;
+}
+
+#predictionFilter {
+	float:left;
+	clear:both;
+	display:inline-block;
+	margin:10x;
+	background-color:grey;
+}
+
+.unResponded{
+	
+}
+
+.hide{
+	position:absolute;
+	display;none;
+}
+
+
+/*score page*/
+
+#scoreTable{
+	border: 1px solid black;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	background-color:rgba(255, 255, 255, 0.8);
+}
+
+#scoreTable th, td{
+	border:1px solid black;
+}
+
+/* admin page*/
+
+.predictionFeeder{
+	border-style: solid;
+	margin:20px;
+	float:left;
+	height:250px;
+	width:240px;
+	background-color:rgba(238, 255, 255, 0.8);
+	font-weight: bold;
+}

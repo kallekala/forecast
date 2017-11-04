@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head/>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="saitinjs.js"></script>
+<link rel="stylesheet" href="saitincss.css">
+
+<title>Prediction Scoring</title>
+
+</head>
+
+<body>
+
+<div class="banner1">
+	<div class="container" id="pääNav">
+		<h1 id="pääTitle">Ennustusapp</h1>
+		<ul>
+			<li><a href="tti.html"> Main </a></li>
+			<li><a href="predictionsPage.html.html"> Predictions </a></li>
+			<li><a href="scoreboard.html">Scoreboard</a></li>
+			<li><a href="adminPage.html">Admin</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="belowbanner">
+	<button id="predictionFilter">Filter. miksei oo omalla rivillään... liittyy floatiin</button>
+	<!-- now boxes go left of nav when full screen -->
+	<div class="predictions">
+		<div class="predictionBox">
+			<p id="prediction1Name">sdf</p>
+				<form id="frm1">
+					<p>Probability:</p>
+					<input type="text" name="probability" value="50%"><br>
+					<input class='input-range' type='range'>
+			</form>
+			<button id="submitProbability">Submit Probability</button>
+		</div>
+
+		<div class="predictionBox">
+			<form id="frm1">
+				<p>Probability:</p>
+				<input type="text" name="probability" value="50%"><br>
+			</form>
+			<button>Submit</button>
+		</div>
+
+		<div class="predictionBox">
+			<form id="frm1">
+				<p>Probability:</p> <input type="text" name="probability" value="50%"><br>
+			</form>
+			<button>Submit</button>
+		</div>
+
+		<div class="predictionBox unResponded">vastaamaton</div>
+
+		<div class="predictionBox"></div>
+</div>
+	<div class="predictionFeeder newPrediction">
+		<h2>New Prediction</h2>
+		<p id="prediction1Name">Prediction name</p>
+		<form id="frm2">
+			<input type="text" name="Name" value="" id="#nimi"><br>
+		 </form>
+		<button id="submitName">Submit Name</button>
+		<h2>Description</h2>
+		<div class="descriptionFeed"></div>
+	</div>
+
+<!-- here should be a line -->
+
+	<div class="predictionFeeder chooseResult">
+		<h2>Outcomes</h2>
+		<p>Prediction</p>
+		<form action="/action_page.php">
+			<select name="cars" id="names">
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="fiat">Fiat</option>
+				<option value="audi">Audi</option>
+			</select>
+			<br>
+			<br>
+			<input type="submit" id="submitResult">
+		</form>
+		<br>
+		<p>Result</p>
+		<form>
+			<input type="radio" name="true" checked> True<br>
+			<input type="radio" name="falser"> False<br>
+			<input type="radio" name="undecided"> Undecided<br>
+		</form>
+		<button id="submitOutcome">Submit outcome</button>
+	</div>
+</div>
+
+{{> footer}}
+
+
+</body>
+
+</html>
