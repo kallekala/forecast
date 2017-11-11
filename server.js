@@ -23,6 +23,7 @@ hbs.registerHelper('getCurrentYear', () => {
   return new Date().getFullYear()
 });
 
+//lyö pääsivun päälle
 app.get('/', (req, res) => {
   res.render('main.hbs', {
     welcomeMessage: "tervetuloa",
